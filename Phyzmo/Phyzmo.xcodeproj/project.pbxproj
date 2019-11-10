@@ -694,13 +694,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
+				DEVELOPMENT_TEAM = A5W579KMV7;
+=======
 				DEVELOPMENT_TEAM = M2H55ZZJC9;
+>>>>>>> b14702e6d836ad845fe164abd3601f605887083f
 				INFOPLIST_FILE = Phyzmo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD
+				PRODUCT_BUNDLE_IDENTIFIER = MDB.Phyzmo;
+=======
 				PRODUCT_BUNDLE_IDENTIFIER = MDB.patrickhaoy.com;
+>>>>>>> b14702e6d836ad845fe164abd3601f605887083f
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -713,13 +721,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
+				DEVELOPMENT_TEAM = A5W579KMV7;
+=======
 				DEVELOPMENT_TEAM = M2H55ZZJC9;
+>>>>>>> b14702e6d836ad845fe164abd3601f605887083f
 				INFOPLIST_FILE = Phyzmo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD
+				PRODUCT_BUNDLE_IDENTIFIER = MDB.Phyzmo;
+=======
 				PRODUCT_BUNDLE_IDENTIFIER = MDB.patrickhaoy.com;
+>>>>>>> b14702e6d836ad845fe164abd3601f605887083f
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

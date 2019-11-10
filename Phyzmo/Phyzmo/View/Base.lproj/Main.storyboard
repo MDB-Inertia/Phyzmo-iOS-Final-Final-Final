@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -71,7 +73,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Socials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEK-Py-NiK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Socials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEK-Py-NiK">
                                 <rect key="frame" x="34" y="232" width="160" height="69"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="Pg2-2y-j8N"/>
@@ -101,6 +103,7 @@
                             <constraint firstItem="GOK-G1-JHd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C7O-4R-kIh"/>
                             <constraint firstItem="GOK-G1-JHd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="F3f-R4-3J5"/>
                             <constraint firstItem="Reb-f9-lfe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="j90-zo-FCb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pEK-Py-NiK" secondAttribute="trailing" constant="658" id="kmS-c6-Aa8"/>
                             <constraint firstItem="lnT-pD-rzu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rJY-Ca-59T"/>
                             <constraint firstItem="GOK-G1-JHd" firstAttribute="top" secondItem="Reb-f9-lfe" secondAttribute="bottom" constant="30" id="u4Y-kg-hIG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GOK-G1-JHd" secondAttribute="trailing" constant="20" id="ueY-lP-vHi"/>
@@ -277,10 +280,13 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTv-Jk-2wB">
                                 <rect key="frame" x="64" y="54" width="45" height="30"/>
                                 <state key="normal" title="Export"/>
+                                <connections>
+                                    <action selector="exportButtonPressed:" destination="Fc9-pq-onl" eventType="touchUpInside" id="HH9-d8-rqE"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cxb-bO-FSJ" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="144" y="54" width="646" height="277"/>
-                                <color key="backgroundColor" red="0.99778193240000002" green="0.85945361850000002" blue="0.2271939218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="1" green="0.86852464490000003" blue="0.89411805099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUk-dc-QUc">
                                 <rect key="frame" x="817" y="67" width="46" height="30"/>
@@ -308,6 +314,7 @@
                     <connections>
                         <outlet property="chartButton" destination="GUk-dc-QUc" id="XSI-zI-HIS"/>
                         <outlet property="chartView" destination="Cxb-bO-FSJ" id="kfs-7F-H6Y"/>
+                        <outlet property="exportButton" destination="qTv-Jk-2wB" id="6Lc-uA-JZZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFk-ho-3P1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -321,14 +328,31 @@
                     <view key="view" contentMode="scaleToFill" id="zkc-xn-6fS">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoD-lh-o8r">
+                                <rect key="frame" x="64" y="66" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Export"/>
+                                <connections>
+                                    <action selector="exportButtonPressed:" destination="nsN-Cr-bJm" eventType="touchUpInside" id="7ku-fn-g9T"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7oO-L6-Jhw"/>
                     </view>
+<<<<<<< HEAD
+                    <tabBarItem key="tabBarItem" title="Chart" id="mRj-kH-D3K"/>
+                    <connections>
+                        <outlet property="exportButton" destination="GoD-lh-o8r" id="xCp-Uh-ScT"/>
+                    </connections>
+=======
                     <tabBarItem key="tabBarItem" title="Chart" image="table" catalog="system" id="mRj-kH-D3K"/>
+>>>>>>> b14702e6d836ad845fe164abd3601f605887083f
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCY-qq-4gP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2846" y="194"/>
+            <point key="canvasLocation" x="2845.9821428571427" y="192.75362318840581"/>
         </scene>
         <!--Object-->
         <scene sceneID="ctT-VV-WeX">
@@ -368,11 +392,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="udK-Ne-giS">
                         <leftBarButtonItems>
-                            <barButtonItem image="camera" catalog="system" style="plain" id="7C3-TW-sQb">
+                            <barButtonItem image="camera" style="plain" id="7C3-TW-sQb">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pNW-ZQ-X2Z">
                                     <rect key="frame" x="64" y="11" width="24" height="22"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" image="camera" catalog="system"/>
+                                    <state key="normal" image="camera"/>
                                     <connections>
                                         <action selector="cameraButtonPressed:" destination="Qsf-8q-nls" eventType="touchUpInside" id="J5n-wO-MIO"/>
                                     </connections>
@@ -427,10 +451,14 @@
         </scene>
     </scenes>
     <resources>
+<<<<<<< HEAD
+        <image name="camera" width="64" height="48"/>
+=======
         <image name="camera" catalog="system" width="64" height="48"/>
         <image name="chart.bar" catalog="system" width="64" height="44"/>
         <image name="table" catalog="system" width="64" height="48"/>
         <image name="tag" catalog="system" width="64" height="58"/>
         <image name="video" catalog="system" width="64" height="40"/>
+>>>>>>> b14702e6d836ad845fe164abd3601f605887083f
     </resources>
 </document>
