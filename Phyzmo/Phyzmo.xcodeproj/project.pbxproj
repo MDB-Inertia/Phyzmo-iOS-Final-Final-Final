@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		19A50DB1B91E900DE08A9742 /* Pods_Phyzmo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61EE68B3C5E205949F4AB4A8 /* Pods_Phyzmo.framework */; };
 		97845B742377C6D600153871 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97845B732377C6D600153871 /* APIClient.swift */; };
+		97845B7C2377F01A00153871 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97845B7B2377F01A00153871 /* Video.swift */; };
 		ACCBBD6C2377549D00863F24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBBD6B2377549D00863F24 /* AppDelegate.swift */; };
 		ACCBBD712377549D00863F24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCBBD6F2377549D00863F24 /* Main.storyboard */; };
 		ACCBBD732377549E00863F24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCBBD722377549E00863F24 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		61EE68B3C5E205949F4AB4A8 /* Pods_Phyzmo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phyzmo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7309BE097651644DE2FDA382 /* Pods-PhyzmoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhyzmoTests.release.xcconfig"; path = "Target Support Files/Pods-PhyzmoTests/Pods-PhyzmoTests.release.xcconfig"; sourceTree = "<group>"; };
 		97845B732377C6D600153871 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		97845B7B2377F01A00153871 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		ACCBBD682377549D00863F24 /* Phyzmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phyzmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCBBD6B2377549D00863F24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACCBBD702377549D00863F24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		ACCBBD9E2377568900863F24 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				97845B7B2377F01A00153871 /* Video.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				ACCBBD6C2377549D00863F24 /* AppDelegate.swift in Sources */,
 				ACCBBDBB23777CEE00863F24 /* VideoHelper.swift in Sources */,
 				ACCBBDAB2377581800863F24 /* ChartViewController.swift in Sources */,
+				97845B7C2377F01A00153871 /* Video.swift in Sources */,
 				ACCBBDA5237757DD00863F24 /* DistanceViewController.swift in Sources */,
 				ACCBBDA32377575200863F24 /* MainViewController.swift in Sources */,
 				97845B742377C6D600153871 /* APIClient.swift in Sources */,
@@ -690,13 +694,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = A5W579KMV7;
+=======
+				DEVELOPMENT_TEAM = M2H55ZZJC9;
+>>>>>>> b14702e6d836ad845fe164abd3601f605887083f
 				INFOPLIST_FILE = Phyzmo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = MDB.Phyzmo;
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = MDB.patrickhaoy.com;
+>>>>>>> b14702e6d836ad845fe164abd3601f605887083f
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -709,13 +721,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = A5W579KMV7;
+=======
+				DEVELOPMENT_TEAM = M2H55ZZJC9;
+>>>>>>> b14702e6d836ad845fe164abd3601f605887083f
 				INFOPLIST_FILE = Phyzmo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = MDB.Phyzmo;
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = MDB.patrickhaoy.com;
+>>>>>>> b14702e6d836ad845fe164abd3601f605887083f
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

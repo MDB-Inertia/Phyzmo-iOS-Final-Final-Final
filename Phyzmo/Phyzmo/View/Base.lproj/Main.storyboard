@@ -263,7 +263,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="e4p-d7-0mR"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Video" id="Mqo-xV-xkz"/>
+                    <tabBarItem key="tabBarItem" title="Video" image="video" catalog="system" id="Mqo-xV-xkz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPW-sl-7ZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -310,7 +310,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VqB-dv-C9E"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Graph" id="mig-LO-fnC"/>
+                    <tabBarItem key="tabBarItem" title="Graph" image="chart.bar" catalog="system" id="mig-LO-fnC"/>
                     <connections>
                         <outlet property="chartButton" destination="GUk-dc-QUc" id="XSI-zI-HIS"/>
                         <outlet property="chartView" destination="Cxb-bO-FSJ" id="kfs-7F-H6Y"/>
@@ -341,10 +341,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7oO-L6-Jhw"/>
                     </view>
+<<<<<<< HEAD
                     <tabBarItem key="tabBarItem" title="Chart" id="mRj-kH-D3K"/>
                     <connections>
                         <outlet property="exportButton" destination="GoD-lh-o8r" id="xCp-Uh-ScT"/>
                     </connections>
+=======
+                    <tabBarItem key="tabBarItem" title="Chart" image="table" catalog="system" id="mRj-kH-D3K"/>
+>>>>>>> b14702e6d836ad845fe164abd3601f605887083f
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCY-qq-4gP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -360,7 +364,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="CUS-NS-9sr"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Object" id="PSD-Aa-NXg"/>
+                    <tabBarItem key="tabBarItem" title="Object" image="tag" catalog="system" id="PSD-Aa-NXg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccy-yY-Bh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -447,6 +451,14 @@
         </scene>
     </scenes>
     <resources>
+<<<<<<< HEAD
         <image name="camera" width="64" height="48"/>
+=======
+        <image name="camera" catalog="system" width="64" height="48"/>
+        <image name="chart.bar" catalog="system" width="64" height="44"/>
+        <image name="table" catalog="system" width="64" height="48"/>
+        <image name="tag" catalog="system" width="64" height="58"/>
+        <image name="video" catalog="system" width="64" height="40"/>
+>>>>>>> b14702e6d836ad845fe164abd3601f605887083f
     </resources>
 </document>
