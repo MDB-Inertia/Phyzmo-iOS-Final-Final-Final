@@ -22,9 +22,6 @@ class VideoViewController: UIViewController {
         return true
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        //UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
-    }
     
 
 }

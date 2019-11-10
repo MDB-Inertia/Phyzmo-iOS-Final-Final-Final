@@ -20,6 +20,8 @@ class GraphViewController: UIViewController {
 
     @IBOutlet weak var chartView: LineChartView!
     @IBOutlet weak var chartButton: UIButton!
+    @IBOutlet weak var exportButton: UIButton!
+    
     
     var chatStatus = 0
 
@@ -141,9 +143,13 @@ class GraphViewController: UIViewController {
 
         updateGraph()
 
-
-
     }
+    
+    @IBAction func exportButtonPressed(_ sender: Any) {
+        let image = chartView.getChartImage(transparent: false)
+        UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+    }
+    
 
     func setUpGraph(){
         for i in 0..<time.count {
@@ -173,9 +179,9 @@ class GraphViewController: UIViewController {
         data.addDataSet(currentLine)
         chartView.data = data
 
-
     }
-
+    
+    
 
 
 }
